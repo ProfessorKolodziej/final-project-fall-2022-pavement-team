@@ -43,3 +43,18 @@ $blue: #4261ab;
 		color: $blue;
 	}
 }
+
+* {
+	box-sizing: border-box;
+}
+
+.navigation {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 0 0 3ch;
+}
+
+.bottom {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
