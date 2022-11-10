@@ -58,3 +58,25 @@ $blue: #4261ab;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
+
+.step1 {
+	font-size: 10px;
+}
+
+h2 {
+	font-size: 8px;
+}
+
+p {
+	font-size: 5px;
+}
+
+.blue {
+	text-align: center;
+	width: 15%;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
