@@ -44,6 +44,46 @@ $blue: #4261ab;
 	}
 }
 
+* {
+	box-sizing: border-box;
+}
+
+body {
+	line-height: 1.5;
+	max-width: 768px;
+	margin: 0 auto;
+	background: #f6eaea;
+}
+
+.options {
+	text-align: center;
+}
+
+.navigation nav {
+	float: left;
+}
+
+nav {
+	display: block;
+}
+
+.navigation {
+	padding: 20px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+}
+
+.bottom {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
 .step1 {
 	font-size: 10px;
 }
