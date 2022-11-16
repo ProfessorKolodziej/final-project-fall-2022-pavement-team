@@ -46,13 +46,8 @@ $blue: #4261ab;
 
 * {
 	box-sizing: border-box;
-}
-
-body {
-	line-height: 1.5;
-	max-width: 768px;
-	margin: 0 auto;
-	background: #f6eaea;
+	margin: 0;
+	padding: 0;
 }
 
 .options {
@@ -79,11 +74,6 @@ img {
 	border: 0;
 }
 
-.bottom {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-}
-
 .step1 {
 	font-size: 10px;
 }
@@ -105,60 +95,194 @@ p {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
-* { margin: 0; padding: 0; }
 
 body {
 	line-height: 1.5;
-	font-family: 微软雅黑;
 	max-width: 768px;
 	margin: 0 auto;
 	background: #f6eaea;
 }
-img { max-width: 100%; vertical-align: middle; border: 0; }
+
 a { text-decoration: none; }
+
 ul,
 li { list-style: none; }
 
-.navigation { padding: 20px; overflow: hidden; margin-bottom: 20px; }
-.navigation img { float: left; margin-right: 50px; }
-.navigation nav { float: left; }
-.navigation nav a { font-size: 20px; color: #000; margin: 0 20px; padding-bottom: 10px; }
-.navigation nav a.c { border-bottom: 2px solid #4b1807; }
-.navigation nav a:hover { border-bottom: 2px solid #4b1807; }
-.navigation .cart { float: right; background: #4b1807; padding: 10px 10px; cursor: pointer; }
-.navigation .cart img { float: right; margin-right: 0; }
-.heading { text-align: center; margin-bottom: 30px; }
-.options { text-align: center; }
-.bottom { text-align: center; position: relative; margin-bottom: 20px; }
+.navigation img {
+	float: left;
+	margin-right: 50px;
+}
 
-.options p { font-size: 12px; margin-bottom: 20px; cursor: pointer; }
-.options h2 { font-size: 14px; }
-.bottom p { background: #4c1705; font-size: 12px; color: #fff; position: absolute; right: 50%; top: 0; padding: 5px 10px; border-radius: 30px; margin-right: -190px; }
-.Instruction { overflow: hidden; margin-bottom: 20px; }
-.Instruction img { width: 70px; float: left; margin-left: 30px; margin-right: 30px; }
-.Instruction h1 { font-size: 24px; float: left; line-height: 60px; }
-.Instruction1 span { font-size: 12px; float: left; line-height: 30px; font-weight: normal; }
-.Instruction1 h1 { font-size: 24px; float: left; line-height: 30px; }
+.navigation nav a {
+	font-size: 20px;
+	color: #000;
+	margin: 0 20px;
+	padding-bottom: 10px;
+}
+
+.navigation nav a.c {
+	border-bottom: 2px solid #4b1807;
+}
+
+.navigation nav a:hover {
+	border-bottom: 2px solid #4b1807;
+}
+
+.navigation .cart {
+	float: right;
+	background: #4b1807;
+	padding: 10px 10px;
+	cursor: pointer;
+}
+
+.navigation .cart img {
+	float: right;
+	margin-right: 0;
+}
+
+.heading {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.bottom {
+	text-align: center;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.options p {
+	font-size: 12px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.options h2 {
+	font-size: 14px;
+}
+
+.bottom p {
+	background: #4c1705;
+	font-size: 12px;
+	color: #fff;
+	position: absolute;
+	right: 50%;
+	top: 0;
+	padding: 5px 10px;
+	border-radius: 30px;
+	margin-right: -190px;
+}
+
+.Instruction {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.Instruction img {
+	width: 70px;
+	float: left;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.Instruction h1 {
+	font-size: 24px;
+	float: left;
+	line-height: 60px;
+}
+
+.Instruction1 span {
+	font-size: 12px;
+	float: left;
+	line-height: 30px;
+	font-weight: normal;
+}
+
+.Instruction1 h1 {
+	font-size: 24px;
+	float: left;
+	line-height: 30px;
+}
 
 .temperature img {
 	width: 70%;
 	margin: 20px auto;
 	border-radius: 80px;
 }
-.blend { text-align: left; padding: 5px 20px; }
-.blend h2 { font-size: 13px; width: 52%; float: left; }
-.blend h3 { font-size: 13px; font-weight: normal; width: 52%; float: left; }
-.blend h4 { font-size: 12px; font-weight: normal; }
-.blend .line { font-size: 13px; font-weight: normal; width: 47%; float: left; margin-top: 10px; line-height: 2; border-left: 1px solid #4c1705; padding-left: 5px; }
-.blend .blend1 { font-size: 12px; font-weight: normal; }
 
-.med-light { overflow: hidden; margin-bottom: 30px; }
-.blend img { width: 44%; float: left; border-radius: 15px; margin-right: 4%; }
-.dark { overflow: hidden; margin-bottom: 30px; }
-.light { overflow: hidden; margin-bottom: 30px; }
+.blend {
+	text-align: left;
+	padding: 5px 20px;
+}
 
-.line span { display: inline-block; width: 6px; height: 6px; border-radius: 100%; background: #d9d9d9; margin-left: 4px; }
-.line span.c { background: #4b1807; }
+.blend h2 {
+	font-size: 13px;
+	width: 52%;
+	float: left;
+}
+
+.blend h3 {
+	font-size: 13px;
+	font-weight: normal;
+	width: 52%;
+	float: left;
+}
+
+.blend h4 {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.blend .line {
+	font-size: 13px;
+	font-weight: normal;
+	width: 47%;
+	float: left;
+	margin-top: 10px;
+	line-height: 2;
+	border-left: 1px solid #4c1705;
+	padding-left: 5px;
+}
+
+.blend .blend1 {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.med-light {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.blend img {
+	width: 44%;
+	float: left;
+	border-radius: 15px;
+	margin-right: 4%;
+}
+
+.dark {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.light {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.line span {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	border-radius: 100%;
+	background: #d9d9d9;
+	margin-left: 4px;
+}
+
+.line span.c {
+	background: #4b1807;
+}
 
 @media all and (max-width: 1199px) {}
 
@@ -169,17 +293,47 @@ li { list-style: none; }
 @media all and (max-width: 575px) {
 
 	.blend { padding: 5px 10px; }
-	.Instruction img { width: 70px; float: left; margin-left: 0; margin-right: 5px; margin-left: 5px; }
-	.Instruction h1 { font-size: 13px; float: left; }
-	.navigation { margin-bottom: 10px; }
+	.Instruction img {
+		width: 70px;
+		float: left;
+		margin-left: 0;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
 
-	.navigation img { float: left; margin-right: 20px; }
-	.navigation nav a { font-size: 13px; color: #000; margin: 0; }
+	.Instruction h1 {
+		font-size: 13px;
+		float: left;
+	}
 
-	.bottom p { margin-right: -174px; }
+	.navigation {
+		margin-bottom: 10px;
+	}
 
-	.temperature { padding: 5px; }
-	.temperature img { width: 70%; margin: 10px auto; border-radius: 50px; }
+	.navigation img {
+		float: left;
+		margin-right: 20px;
+	}
+
+	.navigation nav a {
+		font-size: 13px;
+		color: #000;
+		margin: 0;
+	}
+
+	.bottom p {
+		margin-right: -174px;
+	}
+
+	.temperature {
+		padding: 5px;
+	}
+
+	.temperature img {
+		width: 70%;
+		margin: 10px auto;
+		border-radius: 50px;
+	}
 
 	.blend img {
 		min-height: 150px;
