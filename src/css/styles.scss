@@ -280,7 +280,6 @@ li { list-style: none; }
 	margin-left: 4px;
 }
 
-
 .line span.c {
 	background: #4b1807;
 }
@@ -294,15 +293,16 @@ li { list-style: none; }
 @media all and (max-width: 575px) {
 
 	.blend { padding: 5px 10px; }
-	.Instruction img {
+	.Instruction 
+	img {
 		width: 70px;
 		float: left;
 		margin-left: 0;
 		margin-right: 5px;
-		margin-left: 5px;
 	}
 
-	.Instruction h1 {
+	.Instruction 
+	h1 {
 		font-size: 13px;
 		float: left;
 	}
@@ -311,12 +311,15 @@ li { list-style: none; }
 		margin-bottom: 10px;
 	}
 
-	.navigation img {
+	.navigation 
+	img {
 		float: left;
 		margin-right: 20px;
 	}
 
-	.navigation nav a {
+	.navigation 
+	nav 
+	a {
 		font-size: 13px;
 		color: #000;
 		margin: 0;
@@ -330,13 +333,15 @@ li { list-style: none; }
 		padding: 5px;
 	}
 
-	.temperature img {
+	.temperature 
+	img {
 		width: 70%;
 		margin: 10px auto;
 		border-radius: 50px;
 	}
 
-	.blend img {
+	.blend 
+	img {
 		min-height: 150px;
 	}
 }
