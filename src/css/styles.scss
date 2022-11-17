@@ -284,6 +284,35 @@ li { list-style: none; }
 	background: #4b1807;
 }
 
+.coffeeflavor {
+	margin: 0 auto;
+	width: 227px;
+	height: 100px;
+	left: 36px;
+	top: 403px;
+	border-radius: 36px;
+	display: block;
+	max-width: 100%;
+	object-fit: cover;
+	mix-blend-mode: multiply;
+}
+
+.icedlatte {
+	width: 176px;
+	height: 231px;
+	left: 14px;
+	top: 189px;
+	border-radius: 36px;
+	display: block;
+	max-width: 100%;
+	object-fit: cover;
+	mix-blend-mode: multiply;
+}
+
+.conguratulation {
+	mix-blend-mode: multiply;
+}
+
 @media all and (max-width: 1199px) {}
 
 @media all and (max-width: 991px) {}
