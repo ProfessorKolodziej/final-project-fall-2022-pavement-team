@@ -31,6 +31,8 @@
 		<img src="images/shopping-cart.jpg" alt="shopping cart">
 	</div>
 	</div>
+
+	<div id="tabpage1">
     <div class="heading">
 		<h1>New Arriving</h1>
 		<p>Check out our seasonal drinks!</p>
@@ -50,8 +52,15 @@
 		<img src="images/plain-coffee-bean.jpg" alt="coffee bean image">
 		<img src="images/plain-left-coffee-bean.jpg" alt="coffee bean image">
 		<img src="images/plain-coffee-bean.jpg" alt="coffee bean image">
-		<p>Order Now</p>
+		<p id="tabcontrol">
+			<a href="#tabpage2">
+			Order Now
+		</a>
+		</p>
 	</div>
+</div>
+
+<div id="tabpage2">
 		<div class="Instruction">
 		<img src="https://www.iconsdb.com/icons/preview/brown/coffee-6-xxl.png">
 			<h1 class="step1">What store would you like to order to? </h1>
@@ -72,9 +81,16 @@
 		</section>
 		<div class="container">
 			<img src="https://logovtor.com/wp-content/uploads/2020/11/blue-bottle-coffee-inc-logo-vector.png" class="blue" alt="coffee bean image">
+			<p id="tabcontrol">
+				<a href="#tabpage3">
 			<h2>Order Now</h2>
+		</a>
+		</p>
 		</div>
+	</div>
 	</body> 
+
+	<div id="tabpage3">
     <div class="heading">
         <h1>Please choose the type of milk you would 
             like</h1>
@@ -96,8 +112,15 @@
         <img src="images/plain-coffee-bean.jpg" alt="coffee bean image">
         <img src="images/plain-left-coffee-bean.jpg" alt="coffee bean image">
         <img src="images/plain-coffee-bean.jpg" alt="coffee bean image">
-        <p>Order Now</p>
+        <p id="tabcontrol">
+			<a href="#tabpage4">
+			<p>Order Now</p>
+		</a>
+		</p>
     </div>
+</div>
+
+	<div id="tabpage4">
     <div class="heading">
         <h1>Please choose the type of roast you would like</h1>
     </div>
@@ -118,8 +141,15 @@
         <img src="images/plain-coffee-bean.jpg" alt="coffee bean image">
         <img src="images/plain-left-coffee-bean.jpg" alt="coffee bean image">
         <img src="images/plain-coffee-bean.jpg" alt="coffee bean image">
-        <p>Order Now</p>
+        <p id="tabcontrol">
+			<a href="#tabpage5">
+		<p>Order Now</p>
+	</a>
+	</p>
     </div>
+</div>
+
+<div id="tabpage5">
 	<div class="heading">
 		<img src="images/cup.jpg" alt="image of cup">
 		<h1>Would you like to add any flavors to your coffee?</h1>
@@ -141,8 +171,15 @@
         <img src="images/plain-coffee-bean.jpg" alt="coffee bean image">
         <img src="images/plain-left-coffee-bean.jpg" alt="coffee bean image">
         <img src="images/plain-coffee-bean.jpg" alt="coffee bean image">
-        <p>Order Now</p>
+        <p id="tabcontrol">
+			<a href="#tabpage6">
+		<p>Order Now</p>
+	</a>
+	</p>
     </div>
+</div>
+
+<div id="tabpage6">
 	<div class="heading">
 		<img class="conguratulation" src="images/congratulation.jpg" alt="image of congratulation">
 		<h1>Tadaa!</h1>
@@ -159,6 +196,45 @@
 		<p>$8.45</p>
 	</section>
 	<div class="bottom">
+		<p id="tabcontrol">
+			<a href="#tabpage7">
 		<p>Continue to payment</p>
+	</a>
+	</p>
 	</div>
+</div>
+
+<script type="text/javascript">
+
+	var tabs = document.getElementById('tabcontrol').getElementsByTagName('a');
+	var pages = document.getElementById('tabbody').getElementsByTagName('div');
+	
+	function changeTab() {
+	
+	   var targetid = this.href.substring(this.href.indexOf('#')+1,this.href.length);
+	
+	for(var i=0; i<pages.length; i++) {
+	if( pages[i].id != targetid ) {
+			 pages[i].style.display = "none";
+		  }
+		  else {
+			 pages[i].style.display = "block";
+		  }
+	   }
+	
+	   for(var i=0; i<tabs.length; i++) {
+		  tabs[i].style.zIndex = "0";
+	   }
+	   this.style.zIndex = "10";
+	
+	   return false;
+	}
+	
+	for(var i=0; i<tabs.length; i++) {
+	   tabs[i].onclick = changeTab;
+	}
+	
+	tabs[0].onclick();
+	
+	</script>
 </html>
