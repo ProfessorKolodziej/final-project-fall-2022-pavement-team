@@ -3,6 +3,12 @@
 	padding: 0;
 }
 
+.focus{
+	outline: none;
+	line-height:200px;
+  }
+  .focus:focus {background: #e3a4a4}
+
 body {
 	line-height: 1.5;
 	max-width: 768px;
