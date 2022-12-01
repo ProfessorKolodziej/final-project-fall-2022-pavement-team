@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+img:hover, a:hover {
+	background-color: #eac3a0;
+}
+
 .focus{
 	outline: none;
 	line-height:200px;
@@ -55,7 +59,6 @@ li { list-style: none; }
 	padding-bottom: 10px;
 }
 
-.navigation nav a.c { border-bottom: 2px solid #4b1807; }
 
 .navigation nav a:hover { border-bottom: 2px solid #4b1807; }
 
