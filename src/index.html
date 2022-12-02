@@ -187,10 +187,43 @@
                     Next</p>
             </div>
         </div>
-    
+
         <div id="page5">
+            <div class="Instruction Instruction1">
+                <img src="images/cup.png">
+                <h1 class="step1">
+                    Create Your Custom Coffee
+                    <br />
+                    <span>Would you like to add any flavors to your coffee? </span>
+                </h1>
+            </div>
+            <section class="coffee flavor options">
+                <img class="coffeeflavor" src="images/plain-coffee-bean.png" alt="image of Hazelnut">
+                <p>Hazelnut</p>
+                <img class="coffeeflavor" src="images/plain-coffee-bean.png" alt="image of Vanilla">
+                <p>Vanilla</p>
+                <img class="coffeeflavor" src="images/plain-coffee-bean.png" alt="image of Caramel">
+                <p>Caramel</p>
+                <img class="coffeeflavor" src="images/plain-coffee-bean.png" alt="image of Toffee">
+                <p>Toffee</p>
+            </section>
+            <div class="bottom">
+                <img onclick="open0()" src="images/brown-plain-left-coffee-bean.png" class="brownbean" alt="coffee bean image">
+                <img onclick="open1()" src="images/brown-plain-left-coffee-bean.png" class="brownbean" alt="coffee bean image">
+                <img onclick="open2()" src="images/brown-plain-left-coffee-bean.png" class="brownbean"alt="coffee bean image">
+                <img onclick="open3()" src="images/brown-plain-left-coffee-bean.png" class="brownbean" alt="coffee bean image">
+                <img onclick="open4()" src="images/plain-left-coffee-bean.png" alt="coffee bean image">
+                <img src="images/plain-left-coffee-bean.png" alt="coffee bean image">
+                <p onclick="open5()" class="process">
+                    Oder now</p>
+            </a>
+            </p>
+            </div>
+        </div>
+    
+        <div id="page6">
             <div class="heading">
-                <img class="conguratulation" src="images/icedlatte.png" alt="image of congratulation">
+                <img class="conguratulation" src="images/plain-left-coffee-bean.png" alt="image of congratulation">
                 <h1>Tadaa!</h1>
                 <h2>Here is your customized coffee beverage! Add to cart to pickup at your nearest pavement.</h2>
             </div>
@@ -205,16 +238,15 @@
                 <p>$8.45</p>
             </section>
             <div class="bottom">
-                <p id="tabcontrol">
-                    <a href="#tabpage7">
-                <p>Continue to payment</p>
+                <p onclick="open6()" class="process">
+                    Continue to payment</p>
             </a>
             </p>
             </div>
         </div>
 
         <body>
-            <div id="page6">
+            <div id="page7">
             <div class="heading">
                 <h1>
                     Brewing your coffee</h1>
@@ -300,6 +332,16 @@
             document.getElementById("page4").style.display = "none";
             document.getElementById("page5").style.display = "none";
             document.getElementById("page6").style.display = "block";
+        }
+
+            function open6() {
+            document.getElementById("page1").style.display = "none";
+            document.getElementById("page2").style.display = "none";
+            document.getElementById("page3").style.display = "none";
+            document.getElementById("page4").style.display = "none";
+            document.getElementById("page5").style.display = "none";
+            document.getElementById("page6").style.display = "none";
+            document.getElementById("page7").style.display = "block";
         }
     </script>
 
