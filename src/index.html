@@ -189,6 +189,35 @@
         </div>
 
         <div id="page5">
+            <div class="Instruction">
+                <img src="images/cup.png">
+                <h1 class="step1">
+                    Please choose the type of milk you would 
+                    like  </h1>
+            </div>
+            <section class="location options">
+                <img tabindex="-1" id="c1"class="focus" src="images/2percentmilk.jpg" alt="2 percent milk">
+                <h2>2 percent milk</h2>
+                <img tabindex="-1" id="c1"class="focus" src="images/almondmilk.jpg" alt="almond milk">
+                <h2>Almond Milk</h2>
+                <img tabindex="-1" id="c1"class="focus" src="images/oatmilk.jpg" alt="Oat Milk">
+                <h2>Oat Milk</h2>
+            <img tabindex="-1" id="c1"class="focus" src="images/cup.png" alt="Soy Milk">
+                <h2>Soy Milk</h2>
+            </section>
+            <div class="bottom">
+                <img onclick="open0()" src="images/brown-plain-left-coffee-bean.png" class="brownbean" alt="coffee bean image">
+                <img onclick="open1()" src="images/brown-plain-left-coffee-bean.png" class="brownbean" alt="coffee bean image">
+                <img onclick="open2()" src="images/brown-plain-left-coffee-bean.png" class="brownbean"alt="coffee bean image">
+                <img onclick="open3()" src="images/brown-plain-left-coffee-bean.png" class="brownbean" alt="coffee bean image">
+                <img onclick="open4()" src="images/plain-left-coffee-bean.png" alt="coffee bean image">
+                <img src="images/plain-left-coffee-bean.png" alt="coffee bean image">
+                <p onclick="open5()">
+                    Next</p>
+            </div>
+        </div>
+
+        <div id="page6">
             <div class="Instruction Instruction1">
                 <img src="images/cup.png">
                 <h1 class="step1">
@@ -214,14 +243,14 @@
                 <img onclick="open3()" src="images/brown-plain-left-coffee-bean.png" class="brownbean" alt="coffee bean image">
                 <img onclick="open4()" src="images/plain-left-coffee-bean.png" alt="coffee bean image">
                 <img src="images/plain-left-coffee-bean.png" alt="coffee bean image">
-                <p onclick="open5()" class="process">
+                <p onclick="open6()" class="process">
                     Oder now</p>
             </a>
             </p>
             </div>
         </div>
     
-        <div id="page6">
+        <div id="page7">
             <div class="heading">
                 <img class="conguratulation" src="images/plain-left-coffee-bean.png" alt="image of congratulation">
                 <h1>Tadaa!</h1>
@@ -238,7 +267,7 @@
                 <p>$8.45</p>
             </section>
             <div class="bottom">
-                <p onclick="open6()" class="process">
+                <p onclick="open7()" class="process">
                     Continue to payment</p>
             </a>
             </p>
@@ -246,7 +275,7 @@
         </div>
 
         <body>
-            <div id="page7">
+            <div id="page8">
             <div class="heading">
                 <h1>
                     Brewing your coffee</h1>
@@ -260,33 +289,6 @@
             </section>
         </div>
         </body>
-<body>
-    <div>
-<div class="heading">
-<h1>Please choose the type of roast you would like</h1>
-</div>
-<section class="options">
-<img src="images/lattegraphic.png" alt="a graphic of a latte">
-<p>Latte</p>
-<img src="images/Cappgraphic.png" alt="a graphic of a cappuccino">
-<p>Cappuccino</p>
-<img src="images/maccgraphic.png" alt="graphic of a macchiato">
-<p>Macchiato</p>
-<img src="images/Espressographic.png" alt="graphic of an espresso">
-<p>Espresso</p>
-</section>
-<div class="bottom">
-    <img src="images/brown-plain-left-coffee-bean.png" class="brownbean" alt="coffee bean image">
-    <img src="images/brown-plain-left-coffee-bean.png" class="brownbean" alt="coffee bean image">
-    <img src="images/brown-plain-left-coffee-bean.png" class="brownbean" alt="coffee bean image">
-    <img src="images/brown-plain-left-coffee-bean.png" class="brownbean" alt="coffee bean image">
-    <img src="images/brown-plain-left-coffee-bean.png" class="brownbean" alt="coffee bean image">
-    <img src="images/brown-plain-left-coffee-bean.png" class="brownbean" alt="coffee bean image">
-    <p onclick="open5()" class="process">
-        Next</p>
-</div>
-</div>
-</body>
 
     <script>
         function open0() {
@@ -342,6 +344,16 @@
             document.getElementById("page5").style.display = "none";
             document.getElementById("page6").style.display = "none";
             document.getElementById("page7").style.display = "block";
+            }
+
+            function open7() {
+            document.getElementById("page1").style.display = "none";
+            document.getElementById("page2").style.display = "none";
+            document.getElementById("page3").style.display = "none";
+            document.getElementById("page4").style.display = "none";
+            document.getElementById("page5").style.display = "none";
+            document.getElementById("page6").style.display = "none";
+            document.getElementById("page8").style.display = "block";
         }
     </script>
 
