@@ -19,12 +19,21 @@ body {
 	max-width: 768px;
 	margin: 0 auto;
 	background: #f6eaea;
+	font-family: "Roboto";
 }
 
 img {
 	max-width: 100%;
 	vertical-align: middle;
 	border: 0;
+	padding: 5px;
+}
+
+.temperature {
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+	padding: 10px;
 }
 
 a { text-decoration: none; }
@@ -255,6 +264,10 @@ li { list-style: none; }
 		transform: rotate(-5deg);
 	}
 }
+
+.c2:hover {
+		background-color: transparent;
+	}
 
 #page2 { display: none; }
 #page3 { display: none; }
