@@ -3,27 +3,37 @@
 	padding: 0;
 }
 
-img:hover, a:hover {
+img:hover,
+a:hover {
 	background-color: #eac3a0;
 }
 
-.focus{
+.focus {
 	outline: none;
-	line-height:200px;
-  }
-  .focus:focus {background: #e3a4a4}
+	line-height: 200px;
+}
+.focus:focus { background: #e3a4a4; }
 
 body {
 	line-height: 1.5;
 	max-width: 768px;
 	margin: 0 auto;
 	background: #f6eaea;
+	font-family: "Roboto" serif;
 }
 
 img {
-	max-width: 100%; 
-	vertical-align: middle; 
-	border: 0; 
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+	padding: 5px;
+}
+
+.temperature {
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+	padding: 10px;
 }
 
 a { text-decoration: none; }
@@ -36,23 +46,23 @@ li { list-style: none; }
 }
 
 .navigation {
-	padding: 20px; 
-	overflow: hidden; 
-	margin-bottom: 20px; 
+	padding: 20px;
+	overflow: hidden;
+	margin-bottom: 20px;
 }
 
 .navigation img {
-	float: left; 
-	margin-right: 50px; 
+	float: left;
+	margin-right: 50px;
 }
 
-.navigation img.logo { 
+.navigation img.logo {
 	width: 120px;
 }
 
 .navigation nav { float: left; }
 
-.navigation nav a { 
+.navigation nav a {
 	font-size: 20px;
 	color: #000;
 	margin: 0 20px;
@@ -62,7 +72,7 @@ li { list-style: none; }
 .navigation nav a:hover { border-bottom: 2px solid #4b1807; }
 
 .navigation .cart {
-	float: right; 
+	float: right;
 	cursor: pointer;
 	margin-left: -50px;
 }
@@ -103,7 +113,10 @@ li { list-style: none; }
 	background: #4c1705;
 	font-size: 12px;
 	color: #fff;
-	position:absolute; right: 50%; top: 0; padding: 5px 10px;
+	position: absolute;
+	right: 50%;
+	top: 0;
+	padding: 5px 10px;
 	border-radius: 30px;
 	margin-right: -190px;
 }
@@ -156,7 +169,8 @@ li { list-style: none; }
 	float: left;
 }
 
-.blend h3 { font-size: 13px;
+.blend h3 {
+	font-size: 13px;
 	font-weight: normal;
 	width: 52%;
 	float: left;
@@ -211,7 +225,8 @@ li { list-style: none; }
 
 .line span {
 	display: inline-block;
-	width: 6px; height: 6px;
+	width: 6px;
+	height: 6px;
 	border-radius: 100%;
 	background: #d9d9d9;
 	margin-left: 4px;
@@ -250,6 +265,10 @@ li { list-style: none; }
 	}
 }
 
+.c2:hover {
+	background-color: transparent;
+}
+
 #page2 { display: none; }
 #page3 { display: none; }
 #page4 { display: none; }
@@ -262,7 +281,7 @@ li { list-style: none; }
 	.blend {
 		padding: 5px 10px;
 	}
-	
+
 	.Instruction img {
 		width: 70px;
 		float: left;
@@ -319,4 +338,8 @@ li { list-style: none; }
 	.heading h1 {
 		font-size: 18px;
 	}
+}
+
+.others {
+	margin-top: 100px;
 }
